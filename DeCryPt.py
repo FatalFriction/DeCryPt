@@ -1,7 +1,7 @@
 import requests, os, threading, logging, time, random
 from colorama import Fore
 
-def http(DeCryPt_HTTP):
+def http(M055AD_HTTP):
   while True:
     http_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=http=true&ipPort=true").text
     http_proxy = str(http_proxies)
@@ -10,11 +10,11 @@ def http(DeCryPt_HTTP):
     elif http_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_http_proxies = open(f"Proxy Scraper by DeCryPt/http.txt", "a")
+      scraped_http_proxies = open(f"Proxy Scraper by M055AD/http.txt", "a")
       scraped_http_proxies.write(f"{http_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTP Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTP Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
     
-def https(DeCryPt_HTTPS):
+def https(M055AD_HTTPS):
   while True:
     https_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&supportsHttps=true&ipPort=true").text
     https_proxy = str(https_proxies)
@@ -23,11 +23,11 @@ def https(DeCryPt_HTTPS):
     elif https_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_https_proxies = open(f"Proxy Scraper by DeCryPt/https.txt", "a")
+      scraped_https_proxies = open(f"Proxy Scraper by M055AD/https.txt", "a")
       scraped_https_proxies.write(f"{https_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTPS Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTPS Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
 
-def socks4(DeCryPt_SOCKS4):
+def socks4(M055AD_SOCKS4):
   while True:
     socks4_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=socks4=true&ipPort=true").text
     socks4_proxy = str(socks4_proxies)
@@ -36,11 +36,11 @@ def socks4(DeCryPt_SOCKS4):
     elif socks4_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_socks4_proxies = open(f"Proxy Scraper by DeCryPt/socks4.txt", "a")
+      scraped_socks4_proxies = open(f"Proxy Scraper by M055AD/socks4.txt", "a")
       scraped_socks4_proxies.write(f"{socks4_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS4 Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS4 Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
 
-def socks5(DeCryPt_SOCKS5):
+def socks5(M055AD_SOCKS5):
   while True:
     socks5_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=socks5=true&ipPort=true").text
     socks5_proxy = str(socks5_proxies)
@@ -49,11 +49,11 @@ def socks5(DeCryPt_SOCKS5):
     elif socks5_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_socks5_proxies = open(f"Proxy Scraper by DeCryPt/socks5.txt", "a")
+      scraped_socks5_proxies = open(f"Proxy Scraper by M055AD/socks5.txt", "a")
       scraped_socks5_proxies.write(f"{socks5_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS5 Proxy {Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS5 Proxy {Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
 
-def DeCryPt_X(DeCryPt_ERA):
+def M055AD_X(M055AD_ERA):
   while True:
     http_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=http=true&ipPort=true").text
     http_proxy = str(http_proxies)
@@ -62,9 +62,9 @@ def DeCryPt_X(DeCryPt_ERA):
     elif http_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_http_proxies = open(f"Proxy Scraper by DeCryPt/http.txt", "a")
+      scraped_http_proxies = open(f"Proxy Scraper by M055AD/http.txt", "a")
       scraped_http_proxies.write(f"{http_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTP Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTP Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
     https_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&supportsHttps=true&ipPort=true").text
     https_proxy = str(https_proxies)
     if https_proxy == "Rate limited.":
@@ -72,9 +72,9 @@ def DeCryPt_X(DeCryPt_ERA):
     elif https_proxy == "Internal Server Error":
         logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_https_proxies = open(f"Proxy Scraper by DeCryPt/https.txt", "a")
+      scraped_https_proxies = open(f"Proxy Scraper by M055AD/https.txt", "a")
       scraped_https_proxies.write(f"{https_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTPS Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped HTTPS Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
     socks4_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=socks4=true&ipPort=true").text
     socks4_proxy = str(socks4_proxies)
     if socks4_proxy == "Rate limited.":
@@ -82,9 +82,9 @@ def DeCryPt_X(DeCryPt_ERA):
     elif socks4_proxy == "Internal Server Error":
         logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_socks4_proxies = open(f"Proxy Scraper by DeCryPt/socks4.txt", "a")
+      scraped_socks4_proxies = open(f"Proxy Scraper by M055AD/socks4.txt", "a")
       scraped_socks4_proxies.write(f"{socks4_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS4 Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS4 Proxy{Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
     socks5_proxies = requests.get("https://gimmeproxy.com/api/getProxy?curl=false&protocal=socks5=true&ipPort=true").text
     socks5_proxy = str(socks5_proxies)
     if socks5_proxy == "Rate limited.":
@@ -92,14 +92,14 @@ def DeCryPt_X(DeCryPt_ERA):
     elif socks5_proxy == "Internal Server Error":
       logging.info(f"{Fore.CYAN}|| {Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}-{Fore.RESET}{Fore.BLUE}] Scrape Failed {Fore.RESET}{Fore.CYAN}|| [{Fore.RESET}{Fore.MAGENTA}!{Fore.RESET}{Fore.CYAN}] Trying again...")
     else:
-      scraped_socks5_proxies = open(f"Proxy Scraper by DeCryPt/socks5.txt", "a")
+      scraped_socks5_proxies = open(f"Proxy Scraper by M055AD/socks5.txt", "a")
       scraped_socks5_proxies.write(f"{socks5_proxy}\n")
-      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS5 Proxy {Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by DeCryPt{Fore.RESET}")
+      logging.info(f"{Fore.MAGENTA}|| {Fore.RESET}{Fore.CYAN}{Fore.RESET}{Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.MAGENTA}{Fore.RESET}{Fore.BLUE}]{Fore.BLUE} Scraped SOCKS5 Proxy {Fore.RESET} {Fore.MAGENTA}||{Fore.RESET} {Fore.BLUE}Proxy Scraper by M055AD{Fore.RESET}")
 
   
 def exit():
   try:
-    print("[+] Created by DeCryPt")
+    print("[+] Created by M055AD")
     os.system("exit")
   except:
     print("[-] Failed to Exit")
@@ -107,7 +107,7 @@ def exit():
     
 def directory_check():
   directory = os.getcwd()
-  folder = "/Proxy Scraper by DeCryPt"
+  folder = "/Proxy Scraper by M055AD"
   if not os.path.isdir("".join([directory, folder])):
     print("[-] Proxy Scraping Directory Not Found")
     print("[!] Creating Proxy Scraping Directory")
@@ -117,24 +117,24 @@ def directory_check():
     print("".join([directory, folder]))
     time.sleep(3)
     try:
-      open("Proxy Scraper by DeCryPt/http.txt", "x")
-      open("Proxy Scraper by DeCryPt/https.txt", "x")
-      open("Proxy Scraper by DeCryPt/socks4.txt", "x")
-      open("Proxy Scraper by DeCryPt/socks5.txt", "x")
+      open("Proxy Scraper by M055AD/http.txt", "x")
+      open("Proxy Scraper by M055AD/https.txt", "x")
+      open("Proxy Scraper by M055AD/socks4.txt", "x")
+      open("Proxy Scraper by M055AD/socks5.txt", "x")
     except FileExistsError:
       print("[-] Files for Proxy Scraper Were Found")
     except FileNotFoundError:
-      open("Proxy Scraper by DeCryPt/http.txt", "x")
-      open("Proxy Scraper by DeCryPt/https.txt", "x")
-      open("Proxy Scraper by DeCryPt/socks4.txt", "x")
-      open("Proxy Scraper by DeCryPt/socks5.txt", "x")
+      open("Proxy Scraper by M055AD/http.txt", "x")
+      open("Proxy Scraper by M055AD/https.txt", "x")
+      open("Proxy Scraper by M055AD/socks4.txt", "x")
+      open("Proxy Scraper by M055AD/socks5.txt", "x")
     except:
       print("[-] Finding Files Failed")
 
 def banner_startup_mf():
   try:
-    quotes = [f"""{Fore.RESET}{Fore.MAGENTA}       DeCryPt is a group of people who know how to use       {Fore.RESET}{Fore.BLUE}    ║
-              {Fore.RESET}{Fore.MAGENTA}computers better than \"normal\" people               {Fore.RESET}{Fore.BLUE}║""", f"   {Fore.RESET}{Fore.MAGENTA}\"It's not how you use it, it's how you do it\" - DeCryPt{Fore.RESET}{Fore.BLUE}        ║"]
+    quotes = [f"""{Fore.RESET}{Fore.MAGENTA}       M055AD is a group of people who know how to use       {Fore.RESET}{Fore.BLUE}      ║
+              {Fore.RESET}{Fore.MAGENTA}computers better than \"normal\" people               {Fore.RESET}{Fore.BLUE}║""", f"   {Fore.RESET}{Fore.MAGENTA}\"It's not how you use it, it's how you do it\" - M055AD{Fore.RESET}{Fore.BLUE}         ║"]
     quote = random.choice(quotes)
     print(f"{Fore.BLUE}")
     print("══════════════════════════════════════════════════════════════════╗")
@@ -149,9 +149,9 @@ def banner_startup_mf():
     print("                                                                  ║")
     print(f"{quote}")
     print("                                                                  ║")
-    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] Version     :{Fore.RESET}{Fore.CYAN} v1.0{Fore.RESET}{Fore.BLUE}                      ║")  
-    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] Created by  : {Fore.RESET}{Fore.CYAN}TiNy & Fro$tt{Fore.RESET}{Fore.BLUE}             ║")
-    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] DeCryPt     : {Fore.CYAN}#FuckTheSkidsSunday{Fore.RESET}{Fore.BLUE}       ║")
+    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] Version     :{Fore.RESET}{Fore.CYAN} v0.1{Fore.RESET}{Fore.BLUE}                      ║")  
+    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] Created by  : {Fore.RESET}{Fore.CYAN}M055AD{Fore.RESET}{Fore.BLUE}                    ║")
+    print(f"                      {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}#{Fore.RESET}{Fore.MAGENTA}] M055AD     : {Fore.CYAN}CRACK ALL SHARED PROXIES{Fore.RESET}{Fore.BLUE}   ║")
     print("                                                                  ║")
     print("╔═════════════════════════════════════════════════════════════════╝")
     print(f"{Fore.BLUE}║{Fore.RESET} {Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}D{Fore.RESET} {Fore.MAGENTA}:{Fore.RESET} {Fore.CYAN}1{Fore.RESET}{Fore.MAGENTA}]{Fore.RESET} {Fore.MAGENTA} -> {Fore.RESET}{Fore.BLUE}|| Exit Proxy Scraper{Fore.RESET}")
@@ -237,15 +237,15 @@ if __name__ == "__main__":
       thread_count = input(f"{Fore.BLUE}║ {Fore.RESET}{Fore.MAGENTA}[{Fore.RESET}{Fore.CYAN}${Fore.RESET}{Fore.MAGENTA} : {Fore.RESET}{Fore.CYAN}0{Fore.RESET}{Fore.MAGENTA}]  ~>{Fore.RESET} {Fore.BLUE}|| {Fore.BLUE}[{Fore.RESET}{Fore.MAGENTA}+{Fore.RESET}{Fore.BLUE}] Enter A Thread Amount: {Fore.RESET}")
       thread_count.join("║")
       if len(thread_count) == 0:
-        DeCryPt_X_dft = threading.Thread(target=DeCryPt_X, args=(15, ), daemon=True)
+        M055AD_X_dft = threading.Thread(target=M055AD_X, args=(15, ), daemon=True)
         print(f"{Fore.BLUE}╚══════════════════════════════════════════════════════════════════╝{Fore.RESET}")
-        DeCryPt_X_dft.start()
-        DeCryPt_X_dft.join()
+        M055AD_X_dft.start()
+        M055AD_X_dft.join()
       else:
-        DeCryPt_X_t = threading.Thread(target=DeCryPt_X, args=(str(thread_count), ), daemon=True)
+        M055AD_X_t = threading.Thread(target=M055AD_X, args=(str(thread_count), ), daemon=True)
         print(f"{Fore.BLUE}╚══════════════════════════════════════════════════════════════════╝{Fore.RESET}")
-        DeCryPt_X_t.start()
-        DeCryPt_X_t.join()
+        M055AD_X_t.start()
+        M055AD_X_t.join()
     else:
       exit()
   except KeyboardInterrupt:
